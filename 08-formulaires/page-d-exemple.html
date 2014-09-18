@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- titre -->
+		<title>Document sans titre</title>
+		<!-- encodage des caractères -->
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<!-- corps du document -->
+		<img alt="pine-cone" src="images/pine-cone.jpg" width="580" height="167" />
+		<h1>Titre de niveau 1</h1>
+		<h2>Titre de niveau 2</h2>
+		<h3>Titre de niveau 3</h3>
+		<h4>Titre de niveau 4</h4>
+		<h5>Titre de niveau 5</h5>
+		<h6>Titre de niveau 6</h6>
+		<p>Paragraphe 1 <br /> avec un saut de ligne</p>
+		<p>Paragraphe 2 avec du texte en <em>italique</em></p>
+		<p>Paragrahpe 3 avec du texte en <strong>gras</strong></p>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+		</ul>
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+		</ol>
+		<!-- tableau simple -->
+		<table border="1">
+			<tr>
+				<td>Nom</td>
+				<td>Prénom</td>
+			</tr>
+			<tr>
+				<td>Florent</td>
+				<td>Desjardins</td>
+			</tr>
+		</table>
+		<!-- tableau simple avec en-tête -->
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Nom</th>
+					<th>Prénom</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Florent</td>
+					<td>Desjardins</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- tableau simple avec en-tête et pied -->
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Nom</th>
+					<th>Prénom</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>Nom</td>
+					<td>Prénom</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Florent</td>
+					<td>Desjardins</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- tableau simple avec cellules fusionnées -->
+		<table border="1">
+			<tr>
+				<th>Nom</th>
+				<th>Prénom</th>
+			</tr>
+			<tr>
+				<td colspan="2">Florent Desjardins</td>
+			</tr>
+		</table>
+		<table border="1">
+			<tr>
+				<th>Nom</th>
+				<th rowspan="2">Prénom</th>
+			</tr>
+			<tr>
+				<td>Florent</td>
+			</tr>
+		</table>
+		<ul>
+			<li><a href="http://www.google.fr/" target="_blank">Google</a></li>
+			<li><a href="http://www.peexeo.com/" title="Peexeo">Peexeo</a></li>
+			<li><a href="index.html">Index</a></li>
+			<li><a href="mailto:fd@peexeo.com">Contact</a></li>
+			<li><a href="pdf/mon_pdf.pdf">Télécharger mon pdf</a></li>
+			<li><a href="#">Aller en haut</a></li>
+		</ul>
+		<form>
+			<fieldset>
+				<legend>Recherche avancée</legend>
+				<p>Trouver un article avec...</p>
+				<div>
+					<label class="block">ce mot...</label>
+					<input type="text" />
+				</div>
+				<div>
+					<label class="block">ou cette expression...</label>
+					<textarea></textarea>
+				</div>
+				<div>
+					<label class="block">en français...</label>
+					<input type="checkbox" />
+				</div>
+				<div>
+					<span class="block">il y a longtemps...</span>
+					<label>oui</label>
+					<input type="radio" name="radio" value="oui" checked="checked"/>
+					<label>non</label>
+					<input type="radio" name="radio" value="non" />
+				</div>
+				<div>
+					<label class="block">quelle date...</label>
+					<select>
+						<option>Il y a 1 an</option>
+						<option>Hier</option>
+						<option>Aujourd'hui</option>
+					</select>
+				</div>
+				<div class="overflow">
+					<input type="submit" value="Rechercher" class="right" />
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
