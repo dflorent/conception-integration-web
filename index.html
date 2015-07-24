@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Conception et intégration WEB - LP Market Digit</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Conception et intégration WEB">
+		<meta name="author" content="Florent Desjardins">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,10 +15,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
 		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/tomorrow.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -32,6 +32,12 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+        <style>
+        .blue {
+            color: #1b91ff;
+        }
+        </style>
 	</head>
 
 	<body>
@@ -40,341 +46,587 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+                <section>
+                    <h1>Conception et intégration WEB</h1>
+                    <h3>IUT Lyon 3 - LP Market Digit</h3>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+                    <section>
+                        <h2>Objectifs</h2>
+                    </section>
+                    <section>
+                        <h3>Découvrir et comprendre <br>les bases du langage HTML</h3>
+                    </section>
+                    <section>
+                        <h3>Découvrir le langage CSS <br>et maîtriser la mise en forme de son site</h3>
+                    </section>
+                    <section>
+                         <h3>Savoir créer un site statique simple</h3>
+                    </section>
+                    <section>
+                        <h3>Dynamiser le site avec<br> une initiation au PHP*</h3>
+                        <h3><small>*facultatif</small></h3>
+                    </section>
+                </section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+                    <section>
+                        <h2>Introduction à HTML</h2>
+                    </section>
+                    <section>
+                        <h3><span class="blue">H</span>yper<span class="blue">t</span>ext
+                            <span class="blue">M</span>arkup <span class="blue">L</span>anguage</h3>
+                    </section>
+                    <section>
+                        <h3>Les navigateurs internet</h3>
+                        <img data-src="img/browser_logos-256.png">
+                    </section>
+                    <section>
+                        <h3>Les éditeurs de texte</h3>
+                    </section>
+                    <section>
+                        <h3>Première page HTML</h3>
+                        <pre><code data-trim>
+&lt;!-- page-d-exemple.html --&gt;
+
+Bonjour tout le monde !
+
+Saut de ligne
+                        </code></pre>
+                    </section>
+                </section>
 
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+                    <section>
+                        <h2>Les balises HTML</h2>
+                    </section>
+                    <section>
+                        <h3>Les balises par paire</h3>
+                        <pre><code data-trim>
+                            <p>Exemple</p>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les balises orphelines</h3>
+                        <pre><code data-trim>
+                            <img src="/exemple.jpg">
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les attributs des balises HTML</h3>
+                        <pre><code data-trim>
+<p class="foo" id="bar">Exemple</p>
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+<img src="image.jpg" alt="exemple">
+                        </code></pre>
+                    </section>
+                </section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+                <section>
+                    <section>
+                        <h2>La structure de base d'un document HTML</h2>
+                    </section>
+                    <section>
+                        <h3>Structure globale</h3>
+                        <pre><code data-trim>
+&lt;!-- page-d-exemple.html --&gt;
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Document sans titre&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        ...
+    &lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                    </section>
+                </section>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+                <section>
+                    <section>
+                        <h2>Les bonnes pratiques</h2>
+                    </section>
+                    <section>
+                        <h3>Les commentaires</h3>
+                        <pre><code data-trim>
+                        &lt;!-- exemple de commentaire --&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>L'indentation</h3>
+                        <pre><code data-trim>
+&lt;div&gt;
+    &lt;p&gt;Exemple&lt;/p&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </section>
+                </section>
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+                <section>
+                    <section>
+                        <h2>Structuration du texte</h2>
+                    </section>
+                    <section>
+                        <h3>Les paragraphes</h3>
+                        <pre><code data-trim>
+<p>Paragraphe simple</p>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+<p>Paragraphe <br>avec un saut de ligne</p>
+</code></pre>
+                    </section>
+                    <section>
+                        <h3>Le gras et l'italique</h3>
+                        <pre><code data-trim>
+<p>Paragraphe avec du texte en <em>italique</em></p>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+<p>Paragraphe avec du texte en <strong>gras</strong></p>
+</code></pre>
+                    </section>
+                    <section>
+                        <h3>Les niveaux de titres</h3>
+                        <pre><code data-trim>
+<h1>Titre de niveau 1</h1>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+<h2>Titre de niveau 2</h2>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
+<h3>Titre de niveau 3</h3>
 
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
+<h4>Titre de niveau 4</h4>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+<h5>Titre de niveau 5</h5>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
+<h6>Titre de niveau 6</h6>
+</code></pre>
+                    </section>
+                    <section>
+                        <h3>Les listes non ordonnées</h3>
+                        <pre><code data-trim>
+<ul>
+    <li>Item 1</li>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+    <li>Item 2</li>
 
-    var nodes = document.querySelectorAll( selector );
+    <li>Item 3</li>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+    <li>Item 4</li>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
+    <li>Item 5</li>
+
+    <li>Item 6</li>
+</ul>
+</code></pre>
+                    </section>
+                    <section>
+                        <h3>Les listes ordonnées</h3>
+                        <pre><code data-trim>
+<ol>
+    <li>Item 1</li>
+
+    <li>Item 2</li>
+
+    <li>Item 3</li>
+
+    <li>Item 4</li>
+
+    <li>Item 5</li>
+
+    <li>Item 6</li>
+</ol>
+</code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Les liens</h2>
+                    </section>
+                    <section>
+                        <h3>Les liens externes</h3>
+                        <pre><code data-trim>
+<a href="http://google.fr">Google</a>
+
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">Documentation HTML Mozilla</a>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les liens internes</h3>
+                        <pre><code data-trim>
+<a href="index.html">Retour à l'accueil</a>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les ancres</h3>
+                        <pre><code data-trim>
+<a href="#">Aller en haut</a>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Mailto et téléchargement de fichiers</h3>
+                        <pre><code data-trim>
+<a href="mailto:jean@dupont.com">Contact</a>
+
+<a href="pdf/mon_pdf.pdf">Télécharger mon pdf</a>
+                        </code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Les images</h2>
+                    </section>
+                    <section>
+                        <h3>Les formats d'images pour le web</h3>
+                        <h4>JPG, GIF, PNG, SVG, etc.</h4>
+                    </section>
+                    <section>
+                        <h3>L'insertion des images</h3>
+                        <pre><code data-trim>
+&lt;img alt="pine-cone" src="images/pine-cone.jpg" width="580" height="167" /&gt;
+                        </code></pre>
+                    </section>
+                </section>
+
+                <section>
+                	<section>
+                        <h2>Les tableaux</h2>
+                    </section>
+                    <section>
+                    	<h3>Tableau simple</h3>
+                        <pre><code data-trim>
+&lt;!-- tableau simple --&gt;
+
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Nom&lt;/td&gt;
+        &lt;td&gt;Prénom&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jean&lt;/td&gt;
+        &lt;td&gt;Dupond&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Tableau avec en-tête et pied</h3>
+                        <pre><code data-trim>
+&lt;!-- tableau avec en-tête et pied --&gt;
+
+&lt;table border="1"&gt;
+    &lt;thead&gt;
+         &lt;tr&gt;
+              &lt;th&gt;Nom&lt;/td&gt;
+              &lt;th&gt;Prénom&lt;/td&gt;
+         &lt;/tr&gt;
+    &lt;/head&gt;
+    &lt;tfoot&gt;
+         &lt;tr&gt;
+              &lt;td&gt;Nom&lt;/td&gt;
+              &lt;td&gt;Prénom&lt;/td&gt;
+         &lt;/tr&gt;
+    &lt;/tfoot&gt; 
+    &lt;tbody&gt;
+         &lt;tr&gt;
+              &lt;td&gt;Jean&lt;/td&gt;
+              &lt;td&gt;Dupond&lt;/td&gt;
+         &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Fusionner des cellules</h3>
+                        <pre><code data-trim>
+&lt;!-- tableaux avec cellules fusionnées --&gt;
+
+&lt;table border="1"&gt;
+     &lt;tr&gt;
+          &lt;td&gt;Nom&lt;/td&gt;
+          &lt;td&gt;Prénom&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+          &lt;td colspan="2"&gt;Jean Dupont&lt;/td&gt;
+     &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;table border="1"&gt;
+     &lt;tr&gt;
+          &lt;td&gt;Nom&lt;/td&gt;
+          &lt;td rowspan="2"&gt;Prénom&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+          &lt;td&gt;Jean&lt;/td&gt;
+     &lt;/tr&gt;
+&lt;/table&gt;
+                        </code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Les formulaires</h2>
+                    </section>
+                    <section>
+                        <h3>La balise form</h3>
+                        <pre><code data-trim>
+<form action="" method="POST">...</form>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les labels</h3>
+                        <pre><code data-trim>
+<label for="nom">Nom</label>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Input de type text</h3>
+                        <pre><code data-trim>
+<input type="text" id="nom">
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les zones de texte (textarea)</h3>
+                        <pre><code data-trim>
+<textarea rows="30" cols="150"></textarea>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les cases à cocher</h3>
+                        <pre><code data-trim>
+<input type="checkbox" value="1">
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les boutons radio</h3>
+                        <pre><code data-trim>
+<input type="radio" value="oui" name="radio" checked="checked">
+
+<input type="radio" value="non" name="radio">
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Listes déroulantes (select)</h3>
+                        <pre><code data-trim>
+<select>
+    <option value="opt1">Option 1</option>
+    <option value="opt2">Option 2</option>
+    <option value="opt3">Option 3</option>
+</select>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Boutons de soumission</h3>
+                        <pre><code data-trim>
+<input type="submit" value="Envoyer">
+                        </code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Introduction à CSS</h2>
+                    </section>
+                    <section>
+                        <h3><span class="blue">C</span>ascading <span class="blue">S</span>tyle <span class="blue">S</span>heets</h3>
+                    </section>
+                    <section>
+                        <h3>Les différences de rendu entre les navigateurs</h3>
+                    </section>
+                    <section>
+                        <h3>Création d'un fichier CSS et le lier au HTML</h3>
+                        <pre><code data-trim>
+/* css/style.css */
+
+html {
+    font-family: sans-serif;
+} 
+                        </code></pre>
+                        <pre><code data-trim>
+&lt;!-- index.html --&gt;
+
+&lt;link href="css/style.css" rel="stylesheet"&gt;
+                        </code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>La syntaxe CSS</h2>
+                    </section>
+                    <section>
+                        <h3>La syntaxe CSS</h3>
+                        <pre><code data-trim>
+/* commentaire */
+
+selecteur {
+    propriété: valeur;
+    propriété: valeur;
 }
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+selecteur1,
+selecteur2 {
+    propriété: valeur;
+    propriété: valeur;
+}
+                        </code></pre>
+                    </section>
+                </section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+                <section>
+                    <section>
+                        <h2>Les sélecteurs</h2>
+                    </section>
+                    <section>
+                        <h3>Le sélecteur universel</h3>
+                        <pre><code data-trim>
+* {
+    ...
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les identifiants</h3>
+                        <pre><code data-trim>
+/* css */
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
+#foo {
+    ...
+}
+                        </code></pre>
+                        <pre><code data-trim>
+&lt;!-- html --&gt;
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+<div id="foo">...</div>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les classes</h3>
+                        <pre><code data-trim>
+/* css */
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+.bar {
+    ...
+}
+                        </code></pre>
+                        <pre><code data-trim>
+&lt;!-- html --&gt;
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+<div class="bar">...</div>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les sélecteurs d'attribut</h3>
+                        <pre><code data-trim>
+/* css */
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+[href] {
+    ...
+}
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+a[href^="#"] {
+    ...
+}
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+a[href$="#"] {
+    ...
+}
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+input[type="text"] {
+    ...
+}
+                        </code></pre>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+                        <pre><code data-trim>
+&lt;!-- html --&gt;
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+&lt;a href="#"&gt;Exemple&lt;a&gt;
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+&lt;input type="text"&gt;
+                        </code></pre>
+                    </section>
+                </section>
 
+                <section>
+                    <section>
+                        <h2>Memento des propriétés (non exhaustif)</h2>
+                    </section>
+                    <section>
+                        <h3>Memento (première partie)</h3>
+                        <table>
+                            <tr>
+                                <td>font-family</td>
+                                <td>text-transform</td>
+                            </tr>
+                            <tr>
+                                <td>font-size</td>
+                                <td>text-align</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>line-height</td>
+                            </tr>
+                            <tr>
+                                <td>font-style</td>
+                                <td>text-indent</td>
+                            </tr>
+                            <tr>
+                                <td>text-decoration</td>
+                                <td>color</td>
+                            </tr>
+                        </table> 
+                    </section>
+                    <section>
+                        <h3>Memento (deuxième partie)</h3>
+                        <table>
+                            <tr>
+                                <td>background</td>
+                                <td>border</td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td>display</td>
+                            </tr>
+                            <tr>
+                                <td>height</td>
+                                <td>overflow</td>
+                            </tr>
+                            <tr>
+                                <td>margin</td>
+                                <td>float</td>
+                            </tr>
+                            <tr>
+                                <td>padding</td>
+                                <td>clear</td>
+                            </tr>
+                            <tr>
+                                <td>list-style</td>
+                                <td>position</td>
+                            </tr>
+                        </table> 
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Le positionnement en CSS</h2>
+                    </section>
+                    <section>
+                        <h3>Le flux</h3>
+                    </section>
+                    <section>
+                        <h3>Positionnement statique, relative, absolute, fixe</h3>
+                    </section>
+                    <section>
+                        <h3>La propriété float</h3>
+                    </section>
+                    <section>
+                        <h3>Le centrage des éléments</h3>
+                    </section>
+                </section>
 			</div>
 
 		</div>
@@ -391,8 +643,9 @@ Reveal.addEventListener( 'customevent', function() {
 				progress: true,
 				history: true,
 				center: true,
+                touch: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins
 				dependencies: [
